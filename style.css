@@ -368,7 +368,7 @@ nav a{
 #Projects h1{
     text-align: center;
     font-family: sans-serif;
-    font-size: 10vw;
+    font-size: 30vw;
     color:rgb(204, 238, 188) ;
     -webkit-text-stroke: 1px black;
     opacity: 0.2;
@@ -382,7 +382,7 @@ nav a{
 #Projects h4{
     z-index:1;
     font-family: sans-serif;
-    font-size: 3.2vw;
+    font-size: 10vw;
     margin-top: -14vw;
     animation-name: text-transition;
     animation-duration: 4s;
@@ -406,11 +406,11 @@ nav a{
 }
 
 .Projects-inner-div h2{
-    font-size: 2vw;
+    font-size: 10vw;
 }
 
 .Projects-inner-div h5{
-    font-size: 1.2vw;
+    font-size: 5vw;
     color: rgb(83, 83, 83);
     animation-name: style;
     animation-duration: 4s;
@@ -418,7 +418,7 @@ nav a{
     animation-direction: alternate-reverse;
 }
 .Projects-inner-div p{
-    font-size: 1.5vw;
+    font-size: 3vw;
 }
 
 @keyframes style {
@@ -434,8 +434,8 @@ nav a{
     outline: none;
     color: white;
     text-decoration: none;
-    padding: 0.5vw 1vw 0.5vw 1vw;
-    font-size: 1.2vw;
+    padding: 1vw 2vw 1vw 2vw;
+    font-size: 1.5vw;
     border-radius: 2vw;
     background-color: midnightblue;
 }
@@ -462,7 +462,7 @@ nav a{
         width: 0px; background-color: brown;
     }
     to{
-        width: 20vw; background-color: midnightblue;
+        width: 50vw; background-color: midnightblue;
     }
 }
 
@@ -627,11 +627,7 @@ form{
     padding: 2vw;
     margin-bottom: 10vw;
 }
-form:hover{
-    width:50vw;
-    height:50vw;
-    transform: rotate(360deg);
-}
+
 
 input{
     width: 30vw;
@@ -741,6 +737,13 @@ a:hover{
         height: 45vw;
         transition: width 2s ,height 2s,transform 2s ;
     }
+
+    form:hover{
+        width:50vw;
+        height:50vw;
+        transform: rotate(360deg);
+    }
+
     input{
         width: 20vw;
     }
