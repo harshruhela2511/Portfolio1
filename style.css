@@ -392,13 +392,17 @@ nav a{
 
 #Projects-div{
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
 }
 
 .Projects-inner-div{
     font-family: sans-serif;
-    padding: 6vw 6vw 6vw 6vw;
-    flex:1;
+    padding: 2vw 2vw 2vw 2vw;
+    border:2px solid midnightblue;
+    border-radius: 10px;
+    margin:2vw;
+    width: 40vw;
 }
 
 .Projects-inner-div h2{
@@ -426,7 +430,7 @@ nav a{
 }
 
 .Projects-inner-div a{
-    margin-left:4vw;
+    /* margin-left:4vw; */
     outline: none;
     color: white;
     text-decoration: none;
@@ -440,15 +444,7 @@ nav a{
     background-color: black;
 }
 .divide{
-    margin-top: 6vw;
-    width: 0.5vw;
-    border-radius: 5px;
-    background-color: black;
-    animation-name: line;
-    animation-duration: 6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in;
+    display: none;
 }
 
 .divide1{
@@ -521,13 +517,7 @@ nav a{
     background-color: rgb(251, 216, 93);
     font-size: 1.2vw;
 }
-/* #Edu-div  div h1{
-    font-size: 1.2vw;
-}
 
-#Edu-div div p{
-    font-size: 1vw;
-} */
 
 #Edu-div1{
     flex: 1;
@@ -712,6 +702,28 @@ a:hover{
 }
 
 
+@media screen and (min-width: 890px) {
+    #Projects-div{
+        align-items:unset;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .Projects-inner-div{
+        border:none;
+    }
+
+    .divide{
+    display: block;
+    width: 0.5vw;
+    border-radius: 5px;
+    background-color: black;
+    animation-name: line;
+    animation-duration: 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;   
+    }
+}
 
 
 
