@@ -402,7 +402,7 @@ nav a{
     border:2px solid midnightblue;
     border-radius: 10px;
     margin:2vw;
-    width: 40vw;
+    width: 80vw;
 }
 
 .Projects-inner-div h2{
@@ -614,27 +614,27 @@ nav a{
 #contact-div
 {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 form{
-    width: 30vw;
-    height:30vw;
+    width: 80vw;
+    height:60vw;
     margin-bottom: 4vw;
     border: 2px solid midnightblue;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px 2px midnightblue;
+    box-shadow: 2px 2px 2px 2px midnightblue;
     padding: 2vw;
-    transition: width 2s ,height 2s,transform 2s ;
     margin-bottom: 10vw;
 }
 form:hover{
-    width:42vw;
-    height:25vw;
+    width:50vw;
+    height:50vw;
     transform: rotate(360deg);
 }
 
 input{
-    width: 10vw;
+    width: 30vw;
     outline: none;
     margin:1vw;
     padding: 0.5vw;
@@ -646,12 +646,14 @@ input{
 
 ::placeholder{
     color: midnightblue;
-    font-size: 1vw;
+    font-size: 2vw;
+    padding: 1vw;
 }
 
 textarea{
-    width: 20vw;
-    height: 10vw;
+    width:40vw;
+    height: 20vw;
+    margin-top: 1vw;
     box-shadow: 2px 2px 2px 2px midnightblue;
     background-color: rgb(204, 238, 188);
     border:2px solid midnightblue; 
@@ -663,8 +665,8 @@ textarea{
 }
 
 #btn{
-    width: 10vw;
-    height: 2vw;
+    width: 20vw;
+    height: 5vw;
     font-size:  1vw;
     border:none;
     background-color: midnightblue;
@@ -685,9 +687,12 @@ textarea{
     border-radius: 10px;
     padding:1vw;
     margin-bottom: 10vw;
+    width: 60vw;
+    display: flex;
+    justify-content: space-evenly;
 }
 i{
-    font-size: 4vw;
+    font-size: 5vw;
     margin:1vw;
     color: black;
     transition: transform 0.5s;
@@ -713,8 +718,9 @@ a:hover{
     }
 
     .divide{
+    margin-top: 6vw;
     display: block;
-    width: 0.5vw;
+    width: 1vw;
     border-radius: 5px;
     background-color: black;
     animation-name: line;
@@ -723,6 +729,40 @@ a:hover{
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;   
     }
+
+    #contact-div{
+        align-items: unset;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    form{
+        width:40vw;
+        height: 45vw;
+        transition: width 2s ,height 2s,transform 2s ;
+    }
+    input{
+        width: 20vw;
+    }
+    #icons{
+        width: 10vw;
+        flex-direction: column;
+    }
+
+    textarea{
+        width: 30vw;
+    };
+    i{
+        font-size: 6vw;
+    }
+
+    #btn{
+        height: 2vw;
+    }
+    ::placeholder{
+        font-size: 1vw;
+    }
+
 }
 
 
