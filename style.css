@@ -639,7 +639,7 @@ input{
     margin:1vw;
     padding: 0.5vw;
     border-radius: 20px;
-    background-color: rgb(204, 238, 188);
+    background-color: white;
     border:2px solid midnightblue; 
     box-shadow: 1px 1px 1px 1px midnightblue; 
 }
@@ -655,7 +655,7 @@ textarea{
     height: 20vw;
     margin-top: 1vw;
     box-shadow: 2px 2px 2px 2px midnightblue;
-    background-color: rgb(204, 238, 188);
+    background-color: white;
     border:2px solid midnightblue; 
     outline: none;
     margin-left: 1vw;
