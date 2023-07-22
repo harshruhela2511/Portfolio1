@@ -9,7 +9,6 @@ body{
 nav{
     width: 100%;
     display: flex;
-    /* flex-direction: column; */
     background-color: black;
     position: sticky;
     top: 0px;
@@ -92,12 +91,6 @@ nav a{
 
 #logo{
     display: none;
-
-    /* position: absolute;
-    left: 1vw;
-    top:0.5vw;
-    width: 5vw;
-    height: 5vw; */
 }
 #display {
     align-self: center;
@@ -477,7 +470,7 @@ nav a{
      height: 0px; background-color: brown;
     }
     to{
-     height: 26vw; background-color: rgb(23, 89, 74);
+     height: 30vw; background-color: rgb(23, 89, 74);
     }
 }
 
@@ -524,7 +517,10 @@ nav a{
     background-color: rgb(251, 216, 93);
     font-size: 3vw;
 }
-
+#Edu-imp{
+    display: flex;
+    justify-content: center;
+}
 
 #Edu-div1{
     animation-name: opacity;
@@ -706,8 +702,130 @@ a:hover{
     box-shadow: none;
 }
 
+@media screen and (min-width: 500px) {
+    ::placeholder{
+        font-size: 2vw;
+    }
+    #timeline{
+        width: 1vw;
+    }
+}
 
-@media screen and (min-width: 890px) {
+
+@media screen and (min-width: 1000px) {
+ 
+    nav{
+        justify-content: end;
+    }
+
+    nav a{
+        border-bottom: 4px solid grey;
+        border-top: 4px solid grey;
+        border-bottom-left-radius:10px ;
+        border-bottom-right-radius:10px ;
+        border-top-right-radius:10px ;
+        border-top-left-radius:10px ;
+        padding: 1.5vw;
+        font-size: 1.5vw;
+    }
+
+    #logo{
+        display:block;
+        position: absolute;
+        left: 2vw;
+        top:2vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #display a{
+        font-size: 1.5vw;
+    }
+
+    #about h1{
+        font-size: 12vw;
+    }
+    #about h4{
+        font-size: 4vw;
+        margin-top: -17vw;
+    }
+
+    #skills h1{
+        font-size: 14vw;
+    }
+    #skills h4{
+        font-size: 4vw;
+        margin-top: -19vw;
+    }
+
+    .outer{
+        width: 35vw;
+        height: 2vw;
+    }
+    .inner{
+        height: 2vw;
+    }
+    @keyframes transition1{
+        from{
+         width: 0px; 
+        }
+        to{
+         width: 25vw; 
+        }
+     }
+    @keyframes transition2{
+        from{
+         width: 0px; 
+        }
+        to{
+         width: 27vw; 
+        }
+     }
+    @keyframes transition3{
+        from{
+         width: 0px; 
+        }
+        to{
+         width: 29vw; 
+        }
+     }
+    @keyframes transition4{
+        from{
+         width: 0px; 
+        }
+        to{
+         width: 24vw; 
+        }
+     }
+    @keyframes transition5{
+        from{
+         width: 0px; 
+        }
+        to{
+         width: 30vw; 
+        }
+     }
+    @keyframes transition6{
+        from{
+         width: 0px; 
+        }
+        to{
+         width: 32vw; 
+        }
+    }
+
+    #skills-div h3{
+        font-size: 2vw;
+    }
+
+    #Projects h1{
+        font-size: 10vw;
+    }
+    #Projects h4{
+        font-size: 4vw;
+        margin-top:-14vw;
+    }
+
     #Projects-div{
         align-items:unset;
         justify-content: space-evenly;
@@ -717,10 +835,27 @@ a:hover{
         border:none;
     }
 
+    .Projects-inner-div h2{
+        font-size: 2.5vw;
+    }
+    .Projects-inner-div h5{
+        font-size: 2vw;
+    }
+    .Projects-inner-div p{
+        font-size: 1.5vw;
+    }
+    .Projects-inner-div a{
+        font-size: 1.2vw;
+    }
+
+    .divide1{
+        margin-top: 0vw;
+    }
+    
     .divide{
     margin-top: 6vw;
     display: block;
-    width: 1vw;
+    width: 2vw;
     border-radius: 5px;
     background-color: black;
     animation-name: line;
@@ -728,6 +863,25 @@ a:hover{
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in;   
+    }
+
+    #Edu h1{
+        font-size: 10vw;
+    }
+    #Edu h4{
+        font-size: 4vw;
+        margin-top: -15vw;
+    }
+    .Edu-class{
+        font-size: 2vw;
+    }
+
+    #contact h1{
+        font-size: 10vw;
+    }
+    #contact h4{
+        font-size: 4vw;
+        margin-top: -15vw;
     }
 
     #contact-div{
@@ -738,13 +892,13 @@ a:hover{
 
     form{
         width:40vw;
-        height: 45vw;
+        height: 30vw;
         transition: width 2s ,height 2s,transform 2s ;
     }
 
     form:hover{
         width:50vw;
-        height:50vw;
+        height:40vw;
         transform: rotate(360deg);
     }
 
@@ -758,19 +912,24 @@ a:hover{
 
     textarea{
         width: 30vw;
+        height: 10vw;
     };
     i{
         font-size: 6vw;
     }
 
     #btn{
-        height: 2vw;
+        height: 4vw;
+        font-size: 2vw;
+        width: 10vw;
     }
     ::placeholder{
         font-size: 1vw;
     }
 
 }
+
+
 
 
 
