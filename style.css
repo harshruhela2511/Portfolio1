@@ -873,7 +873,15 @@ a:hover{
         margin-top: -15vw;
     }
     .Edu-class{
-        font-size: 2vw;
+        font-size: 1.5vw;
+    }
+
+    @keyframes timeline {
+        0%{margin-top:2vw;background-color: teal;}
+        25%{margin-top:20vw;background-color: slategrey;}
+        50%{margin-top:40vw;background-color: slateblue;}
+        75%{margin-top:60vw;background-color: sienna;}
+        100%{margin-top:2vw;background-color: brown;}
     }
 
     #contact h1{
@@ -892,12 +900,12 @@ a:hover{
 
     form{
         width:40vw;
-        height: 30vw;
+        height: 35vw;
         transition: width 2s ,height 2s,transform 2s ;
     }
 
     form:hover{
-        width:50vw;
+        width:45vw;
         height:40vw;
         transform: rotate(360deg);
     }
